@@ -1,0 +1,72 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<template name="mainPage">
+	<div class="container">
+		{{> topBar }}
+		{{> leadingImage }}
+
+		<div class="wikiPage">
+		    {{> FridaKahlo }}
+		</div>
+
+		{{> bottomBar}}
+		{{> tweetAFact}}
+	</div>
+	<div id="page-cover"></div>
+</template>
+
+<template name="topBar">
+	<div id="topBar" class="nav">
+		<div class="upperSearch pull-left">
+			<img src="w.png" class="fakeW">
+			<a href="/search"><i class="fa fa-search fa-lg searchIcon"></i></a>
+		</div>
+		<div class="upperMenu pull-right">
+			<i class="fa fa-caret-left fa-lg"></i>
+			<i class="fa fa-bars fa-lg"></i>
+		</div>
+	</div>
+</template>
+
+<template name="leadingImage">
+	<div id="leadingImage">
+        <div id="firstHeading" class="firstHeading">
+        	<div class="mainTitle">Frida Kahlo</div>
+        	<div class="subTitle">Mexican painter</div>
+        </div>
+	</div>
+</template>
+
+<template name="bottomBar">
+	<div id="savedFavorite" class="hide">
+		<p>Saved for offline reading.</p>
+	</div>
+	<div id="bottomBar" class="nav">
+		<div class="browseArrows pull-left">
+			<i class="fa fa-chevron-left"></i>
+			<i class="fa fa-chevron-right"></i>
+		</div>
+		<div class="engageIcons pull-right">
+			<i class="fa fa-heart-o animated pulse favoriteIt"></i>
+			<i class="fa fa-share-square-o animated pulse shareIt"></i>
+		</div>
+	</div>
+</template>
+
+<template name="tweetAFact">
+	<div id="tweetAFact" class="modal hide">
+		<div id="shareImgContainer" class="shareFact">
+			<div id="shareImg">
+				<img src="tweetAFact.png">
+			</div>
+			<div id="shareImgBtn">
+				<p>Share as image</p>
+			</div>
+		</div>
+		<div id="shareAsText" class="shareFact">
+			<p>Share as text</p>
+		</div>
+	</div>
+</template>

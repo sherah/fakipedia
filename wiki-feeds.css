@@ -1,0 +1,284 @@
+body, html {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  font-family: Helvetica;
+  line-height: 160%;
+}
+
+h1,h2,h3,h4,h5,p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.container {
+	width: 320px;
+  	margin: 0;
+  	padding: 0;
+  	height: 100%;
+}
+
+.text-center {
+	text-align: center;
+}
+
+#topBar {
+	height: 45px;
+	padding: 5px;
+}
+
+.search-input {
+	width: 70%;
+  	border-radius: 6px;
+	height: 30px;
+	border: 1px #ccc solid;
+	margin-right: 5px;
+	padding: 0 7px;
+    font-size: 70%;
+}
+
+#searchBar {
+	padding: 7px;
+	background-color: #e4e4e4;
+	border-bottom: 1px #ccc solid;
+	font-size: 120%;
+}
+
+.searchResults {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.searchResults li {
+	height: 30px;
+	padding: 15px 10px 10px 10px;
+	border-bottom: 1px #ccc solid;
+}
+
+#recentSearches-li {
+	font-weight: bold;
+}
+
+#bottomBar {
+	height: 45px;
+	background-color: #e4e4e4;
+	position: fixed;
+	width: 100%;
+	bottom: 35px;
+	border-top: 1px #ccc solid;
+}
+
+.fa-search {
+	vertical-align: top;
+	margin-top: 3px;
+	margin-left:5px;
+}
+
+.backdrop {
+	position: absolute;
+	z-index: 9999;
+}
+
+.nav {
+	font-size: 140%;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.upperMenu, .upperSearch {
+	display: inline-block;
+	padding: 0 10px;
+	margin-top: 10px;
+	vertical-align: top;
+}
+
+.browseArrows, .engageIcons {
+	margin-top: 10px;
+	padding: 0 5px;
+}
+
+.browseArrows i, .engageIcons i {
+	padding: 0 8px;
+}
+
+.red {
+	color: red;
+}
+
+.hide {
+	display: none;
+}
+
+#savedFavorite {
+	height: 20px;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.4);
+	text-align: center;
+	font-size: 9px;
+	color: #fff;
+	line-height: normal;
+	position: fixed;
+	width: 100%;
+	bottom: 40px;
+}
+
+#savedFavorite p {
+	margin: 3px;
+	letter-spacing: .04em;
+}
+
+#leadingImage {
+	position: relative;
+    width: 100%;
+    height: 195px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: url('FridaKahlo.jpg') no-repeat;
+}
+
+#leadingImage:before {
+	content: " ";
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+	background: linear-gradient(0deg, #474747 60%, #fafafa);
+}
+
+.mediawiki {
+	padding: 10px;
+}
+
+.firstHeading {
+	font-family: Georgia;
+	font-weight: lighter;
+	padding-left: 10px;
+	position: absolute;
+    bottom: 0;
+    color: #fff;
+    line-height: 200%;
+}
+
+.mainTitle {
+	font-size: 200%;
+}
+
+.subTitle {
+}
+
+.leadText {
+
+}
+
+.infobox {
+	background-color: #e4e4e4;
+	border: 1px #dbdbdb solid;
+}
+
+.mainArticle {
+
+}
+
+.gallery {
+	list-style-type: none;
+	margin-left: -1.5em;
+}
+
+#tweetAFact {
+	position: fixed;
+	z-index: 10;
+	bottom: 35px;
+	color: blue;
+	width: 100%;
+}
+
+.shareFact {
+	background-color: #fff;
+	border-radius: 4px;
+	margin: .55em;
+}
+
+#shareImgContainer {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+#shareImg {
+	padding: 7px;
+}
+
+#shareImgBtn {
+	border-top: 1px solid #ccc;
+}
+
+#shareImgBtn p, #shareAsText p {
+	margin: 7px 0;
+}
+
+#shareImgContainer, #shareAsText {
+	font-size: 120%;
+	text-align: center;
+	width: 300px;
+	padding: 3px 0;
+}
+
+#page-cover {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+.title {
+	padding: 10px 0;
+	color: rgba(0,0,0,0.8);
+}
+
+.card {
+	width: 93%;
+	border: 1px solid #ccc;
+	min-height: 133px;
+	background-color: #fff;
+	margin: .55em;
+}
+
+.cardPhoto {
+	display: inline-block;
+}
+
+.fullCardPhoto img {
+	width: 297px;
+}
+
+.feeds {
+	padding: 10px 0 20px 0;
+}
+
+.cardText {
+	padding: 10px;
+	display: inline-block;
+}
+
+.cardTextSmaller {
+	padding: 0 15px;
+	display: inline;}
