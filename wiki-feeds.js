@@ -15,6 +15,22 @@ if (Meteor.isClient) {
     this.render('feeds');
   });
 
+  Router.route('wikiPage/:_name', function(){
+    this.render('wikiPage', { data:
+      {name: this.params._name}
+    });
+  });
+
+  Router.route('/HannahHoch', function () {
+    this.render('HannahHochPage');
+  });
+
+  Template.wikiPage.helpers({
+    dynamicTemplate: function() {
+      console.log(this);
+      return Template[this.name];
+    }
+  });
 
   // Template.content.helpers({
   //   counter: function () {
@@ -22,7 +38,7 @@ if (Meteor.isClient) {
   //   }
   // });
 
-  Template.mainPage.events({
+  Template.wikiPage.events({
     'click #page-cover': function(event, data){
       toggleModal();
     }
