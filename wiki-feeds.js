@@ -1,10 +1,11 @@
 if (Meteor.isClient) {
-  Session.wantsToShare = true;
-  // counter starts at 0
-  Session.setDefault('counter', 0);
 
   Router.route('/', function () {
     this.render('mainPage');
+  });
+
+  Router.route('/w', function() {
+    this.render('sideNav');
   });
 
   Router.route('/search', function () {
@@ -32,32 +33,25 @@ if (Meteor.isClient) {
     }
   });
 
-  // Template.content.helpers({
-  //   counter: function () {
-  //     return Session.get('counter');
-  //   }
-  // });
-
   Template.wikiPage.events({
     'click #page-cover': function(event, data){
       toggleModal();
     }
   });
 
-  Template.topBar.events({
-    'click searchIcon': function () {
-      //go to the menu
-
-    }
-  });
-
-  Template.tweetAFact.helpers({
-    wantsToShare: function(){
-      return Session.wantsToShare;
+  Template.search.events({
+    'click .goBack': function(){
+      window.history.back();
     }
   });
 
   Template.bottomBar.events({
+    'click .goBack': function(){
+      window.history.back();
+    },
+    'click .goForward': function(){
+      window.history.forward();
+    },
     'click .favoriteIt': function (event, template) {
       $(event.target).removeClass('fa-heart-o favoriteIt')
         .addClass('fa-heart red unfavoriteIt pulse');
@@ -72,9 +66,6 @@ if (Meteor.isClient) {
         .addClass('fa-heart-o favoriteIt pulse');
     },
     'click .shareIt': function (event, template) {
-      console.log(Session.wantsToShare);
-      Session.wantsToShare = true;
-
       toggleModal('#tweetAFact');
     }
   });

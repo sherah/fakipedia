@@ -197,6 +197,10 @@ a {
 
 }
 
+.moreSearch {
+	width:100%;
+}
+
 .gallery {
 	list-style-type: none;
 	margin-left: -1.5em;
@@ -285,7 +289,7 @@ a {
 	color: rgba(0,0,0,0.4);
 }
 
-.card h2 {
+.card h2, #featuredArticle h2 {
 	font-family: Georgia;
 	font-weight: lighter;
 	margin-bottom: 5px;
@@ -306,4 +310,8 @@ a {
 	display: inline;
 	float: right;
 	width: 155px;
+}
+
+#featuredArticle {
+	padding: 15px;
 }

@@ -1,0 +1,22 @@
+TODO
+
+onload, show wikipedia globe animation
+top search bar functionality
+bottom and top bars disappear
+animations for transitions
+finish W sidebar nav
+featured article layout update
+fix events on heart/share not working
+arrow functionality
+refresh article when pulled down
+header image leads to large version when tapped
+wiki page formatting
+bottom of wiki page
+add new pages
+
+
+
+takes more time:
+
+second sidebar
+edit icons/fake editing
