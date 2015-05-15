@@ -31,6 +31,8 @@ a {
 #topBar {
 	height: 45px;
 	padding: 5px;
+	border-bottom: 1px #ccc solid;
+	background-color: #fff;
 }
 
 .search-input {
@@ -71,7 +73,7 @@ a {
 	background-color: #e4e4e4;
 	position: fixed;
 	width: 100%;
-	bottom: 35px;
+	bottom: 0;
 	border-top: 1px #ccc solid;
 }
 
@@ -259,7 +261,7 @@ a {
 	border: 1px solid #ccc;
 	min-height: 133px;
 	background-color: #fff;
-	margin: .55em;
+	margin: .55em .55em 1em;
 }
 
 .cardPhoto {
@@ -274,11 +276,34 @@ a {
 	padding: 10px 0 20px 0;
 }
 
+.card h1, .card h2, .card h3,
+.card h4, .card h5 {
+	line-height: 180%;
+}
+
+.card h4, .card h5 {
+	color: rgba(0,0,0,0.4);
+}
+
+.card h2 {
+	font-family: Georgia;
+	font-weight: lighter;
+	margin-bottom: 5px;
+}
+
 .cardText {
-	padding: 10px;
+	padding: 0 10px 10px 10px;
 	display: inline-block;
 }
 
+.cardText p {
+	color: rgba(0,0,0,0.7);
+	font-weight: lighter;
+}
+
 .cardTextSmaller {
-	padding: 0 15px;
-	display: inline;}
+	padding: 20px 0 10px 0;
+	display: inline;
+	float: right;
+	width: 155px;
+}
