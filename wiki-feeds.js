@@ -40,20 +40,20 @@ if (Meteor.isClient) {
   });
 
   Template.search.events({
-    'touchstart .goBack': function(){
-      console.log('firing');
+    'touchstart .goBack': function(event){
       window.history.back();
     }
   });
 
   Template.sideNav.events({
-    'touchstart .goBack': function(){
+    'touchstart .goBack': function(event){
+      event.preventDefault();
       window.history.back();
     }
   });
 
   Template.shortTopBar.events({
-    'touchstart .xOut': function(){
+    'touchstart .xOut': function(event){
       window.history.back();
     },
   });
