@@ -34,25 +34,38 @@ if (Meteor.isClient) {
   });
 
   Template.wikiPage.events({
-    'click #page-cover': function(event, data){
-      toggleModal();
+    'touchstart .page-cover': function(event, data){
+      toggleModal('#tweetAFact');
     }
   });
 
   Template.search.events({
-    'click .goBack': function(){
+    'touchstart .goBack': function(){
+      console.log('firing');
       window.history.back();
     }
   });
 
-  Template.bottomBar.events({
-    'click .goBack': function(){
+  Template.sideNav.events({
+    'touchstart .goBack': function(){
+      window.history.back();
+    }
+  });
+
+  Template.shortTopBar.events({
+    'touchstart .xOut': function(){
       window.history.back();
     },
-    'click .goForward': function(){
+  });
+
+  Template.bottomBar.events({
+    'touchstart .goBack': function(){
+      window.history.back();
+    },
+    'touchstart .goForward': function(){
       window.history.forward();
     },
-    'click .favoriteIt': function (event, template) {
+    'touchstart .favoriteIt': function (event, template) {
       $(event.target).removeClass('fa-heart-o favoriteIt')
         .addClass('fa-heart red unfavoriteIt pulse');
 
@@ -61,23 +74,26 @@ if (Meteor.isClient) {
           $('#savedFavorite').addClass('hide');
       }, 2000);
     },
-    'click .unfavoriteIt': function (event, template) {
+    'touchstart .unfavoriteIt': function (event, template) {
       $(event.target).removeClass('fa-heart red unfavoriteIt')
         .addClass('fa-heart-o favoriteIt pulse');
     },
-    'click .shareIt': function (event, template) {
+    'touchstart .shareIt': function (event, template) {
+      toggleModal('#tweetAFact');
+    },
+    'touchstart .page-cover': function(event, data){
       toggleModal('#tweetAFact');
     }
   });
 
   var toggleModal = function( modal ){
     if( $( modal ).hasClass('hide') ){
-      $("#page-cover").css("opacity",0.6).fadeIn(300, function () {
+      $(".page-cover").css("opacity",0.6).fadeIn(400, function () {
           $( modal ).removeClass('hide').css({'position':'aboslute','z-index':9999});
       });
     } else {
-      $("#page-cover").css("opacity",0).fadeIn(300, function () {
-          $( '.modal' ).addClass('hide').css({'position':'relative','z-index':0});
+      $(".page-cover").css({"opacity":0, "z-index": -9999}).fadeIn(400, function () {
+          $( '.modal' ).addClass('hide');
       });
     }
   };

@@ -6,24 +6,27 @@
 	{{> topBar}}
 	{{> featuredArticle}}
 	{{> bottomBar}}
-	{{> tweetAFact}}
-	{{> pageCover}}
-</template>
-
-<template name="pageCover">
-	<div id="page-cover"></div>
 </template>
 
 <template name="topBar">
 	<div id="topBar" class="nav">
 		<div class="upperSearch pull-left">
-			<a href="/"><img src="/w.png" class="fakeW"></a>
+			<a href="/w"><img src="/w.png" class="fakeW"></a>
 			<a href="/search"><i class="fa fa-search fa-lg searchIcon"></i></a>
 		</div>
 		<div class="upperMenu pull-right">
 			<i class="fa fa-caret-left fa-lg"></i>
 			<i class="fa fa-bars fa-lg"></i>
 		</div>
+	</div>
+</template>
+
+<template name="shortTopBar">
+	<div id="shortTopBar">
+		<ul class="shortTopContainer">
+			<li><i class="fa fa-close fa-2x pull left xOut"></i></li>
+			{{# if title}}<li><h2 class="text-center">{{title}}</h2></li>{{/if}}
+		</ul>
 	</div>
 </template>
 
@@ -41,20 +44,20 @@
 			<i class="fa fa-share-square-o animated pulse shareIt"></i>
 		</div>
 	</div>
-</template>
-
-<template name="tweetAFact">
 	<div id="tweetAFact" class="modal hide">
-		<div id="shareImgContainer" class="shareFact">
-			<div id="shareImg">
-				<img src="/tweetAFact.png">
+		<div class="page-cover"></div>
+		<div class="shareCard animated slideInUp">
+			<div id="shareImgContainer" class="shareFact">
+				<div id="shareImg">
+					<img src="/tweetAFact.png">
+				</div>
+				<div id="shareImgBtn">
+					<p>Share as image</p>
+				</div>
 			</div>
-			<div id="shareImgBtn">
-				<p>Share as image</p>
+			<div id="shareAsText" class="shareFact">
+				<p>Share as text</p>
 			</div>
-		</div>
-		<div id="shareAsText" class="shareFact">
-			<p>Share as text</p>
 		</div>
 	</div>
 </template>
