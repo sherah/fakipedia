@@ -7,7 +7,30 @@
 			<li>Nearby</li>
 			<li>Recent</li>
 			<li>Saved Pages</li>
+			<li class="contributeBtn">Contribute<div class="notification">1</div></li>
 		</ul>
 		<div class="moreBtn">MORE...</div>
+		{{> ThankYou}}
 	</div>
+</template>
+
+<template name="ThankYou">
+
+	<div class="ThankYou">
+		<div id="ThankYouMessage">
+			<span class="thankYouX"><i class="fa fa-close fa-2x"></i></span>
+			<h1>Thank You!</h1>
+			<p>Wikipedia wouldn't be possible without all your support!</p>
+		</div>
+		{{> donateButton}}
+	</div>
+
+</template>
+
+<template name="donateButton">
+
+	<div class="donateButtonArea">
+		<div class="button button-blue donateButton">Donate</div>
+	</div>
+
 </template>

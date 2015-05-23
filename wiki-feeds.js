@@ -49,6 +49,10 @@ if (Meteor.isClient) {
     'touchstart .goBack': function(event){
       event.preventDefault();
       window.history.back();
+    },
+    'touchstart .contributeBtn': function(event){
+      event.preventDefault();
+      $('.ThankYou').css({'display':'block','z-index': '9999'});
     }
   });
 
