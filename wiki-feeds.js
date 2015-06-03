@@ -56,6 +56,20 @@ if (Meteor.isClient) {
     }
   });
 
+  Template.ThankYou.events({
+    'click .thankYouX': function(event){
+      event.preventDefault();
+      $('.ThankYou').css({'display':'none','z-index': '-9999'});
+    },
+  });
+
+  Template.donateButton.events({
+    'click .donateButton': function(event){
+      event.preventDefault();
+
+    },
+  });
+
   Template.shortTopBar.events({
     'touchstart .xOut': function(event){
       window.history.back();

@@ -11,8 +11,8 @@
 <template name="topBar">
 	<div id="topBar" class="nav">
 		<div class="upperSearch pull-left">
-			<a href="/w"><img src="/w.png" class="fakeW"></a>
-			<a href="/search"><i class="fa fa-search fa-lg searchIcon"></i></a>
+			<a href="/w"><img src="/w.svg" class="fakeW" width="44px"></a>
+			<a href="/search"><img src="/search.svg" width="44px"></a>
 		</div>
 		<div class="upperMenu pull-right">
 			<i class="fa fa-caret-left fa-lg"></i>
@@ -23,8 +23,8 @@
 
 <template name="shortTopBar">
 	<div id="shortTopBar">
-		<i class="fa fa-close fa-2x pull-left xOut"></i>
-		{{# if title}}<h2 class="text-center">{{title}}</h2>{{/if}}
+		{{# if title}}<h2 class="text-center shortTopTitle">{{title}}</h2>{{/if}}
+		<img src="/close.svg" width="44px" style="margin-top:-7px">
 	</div>
 </template>
 
