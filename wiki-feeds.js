@@ -4,6 +4,10 @@ if (Meteor.isClient) {
     this.render('mainPage');
   });
 
+  Router.route('/featuredArticle', function () {
+    this.render('mainPage');
+  });
+
   Router.route('/w', function() {
     this.render('sideNav');
   });
@@ -41,6 +45,13 @@ if (Meteor.isClient) {
 
   Template.search.events({
     'touchstart .goBack': function(event){
+      window.history.back();
+    }
+  });
+
+  Template.shortTopBar.events({
+    'touchstart .goBack': function(event){
+      console.log('it works');
       window.history.back();
     }
   });
