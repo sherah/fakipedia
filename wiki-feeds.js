@@ -1,5 +1,9 @@
 if (Meteor.isClient) {
 
+  Session.set({
+    backPage: '/'
+  });
+
   Router.route('/', function () {
     this.render('mainPage');
   });
@@ -30,6 +34,24 @@ if (Meteor.isClient) {
     this.render('HannahHochPage');
   });
 
+  Template.mainPage.events({
+    'touchstart a': function(event, data){
+      var t         = data.view.name,
+          template  = t.substr(t.indexOf('.')+1);
+
+      Session.set('backPage', template);
+      console.log('the backpage: ', Session.get('backPage'));
+    },
+    'touchstart .goBack': function(event, data){
+      event.preventDefault();
+      goToLastPage(Session.get('backPage'));
+    }
+  });
+
+  var goToLastPage = function(lastPage){
+      Blaze.render(lastPage, document.body);
+  };
+
   Template.wikiPage.helpers({
     dynamicTemplate: function() {
       console.log(this);
@@ -43,27 +65,15 @@ if (Meteor.isClient) {
     }
   });
 
-  Template.search.events({
-    'touchstart .goBack': function(event){
-      window.history.back();
-    }
-  });
-
-  Template.shortTopBar.events({
-    'touchstart .goBack': function(event){
-      console.log('it works');
-      window.history.back();
-    }
-  });
-
   Template.sideNav.events({
-    'touchstart .goBack': function(event){
-      event.preventDefault();
-      window.history.back();
-    },
     'touchstart .contributeBtn': function(event){
       event.preventDefault();
       $('.ThankYou').css({'display':'block','z-index': '9999'});
+    },
+    'touchstart .goBack': function(event){
+      event.preventDefault();
+      console.log(Session.get('backPage'));
+      goToLastPage(Session.get('backPage'));
     }
   });
 
@@ -82,15 +92,12 @@ if (Meteor.isClient) {
   });
 
   Template.shortTopBar.events({
-    'touchstart .xOut': function(event){
+    'touchstart .goBack': function(event){
       window.history.back();
     },
   });
 
   Template.bottomBar.events({
-    'touchstart .goBack': function(){
-      window.history.back();
-    },
     'touchstart .goForward': function(){
       window.history.forward();
     },
