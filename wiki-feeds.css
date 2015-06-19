@@ -25,6 +25,17 @@ a {
   	height: 100%;
 }
 
+.photoGallery {
+	height: 640px;
+	width:320px;
+	background-color: #000;
+	position: fixed;
+}
+
+.photoGallery img {
+	margin-top: 50%;
+}
+
 .text-center {
 	text-align: center;
 }

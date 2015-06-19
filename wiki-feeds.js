@@ -20,6 +20,10 @@ if (Meteor.isClient) {
     this.render('feeds');
   });
 
+  Router.route('/hummingbirdGallery', function () {
+    this.render('hummingbirdGallery');
+  });
+
   Router.route('wikiPage/:_name', function(){
     this.render('wikiPage', { data:
       {name: this.params._name}
@@ -28,6 +32,14 @@ if (Meteor.isClient) {
 
   Router.route('/HannahHoch', function () {
     this.render('HannahHochPage');
+  });
+
+  Template.feeds.helpers({
+    templateGestures: {
+      'swipeleft .fullCardPhoto': function(event, templateInstance){
+        alert('yo it swipes');
+      }
+    }
   });
 
   Template.wikiPage.helpers({
