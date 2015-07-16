@@ -2,10 +2,15 @@ body, html {
   background-color: #f5f5f5;
   margin: 0;
   padding: 0;
-  width: 320px;
   font-family: Helvetica;
   line-height: 160%;
   height: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+html {
+        box-sizing: border-box;
 }
 
 h1,h2,h3,h4,h5,p {
@@ -19,8 +24,9 @@ a {
 }
 
 .container {
-	width: 320px;
-  	margin: 0;
+	width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
   	padding: 0;
   	height: 100%;
 }
@@ -30,16 +36,21 @@ a {
 }
 
 #topBar, #shortTopBar {
-	height: 45px;
+	height: 44px;
 	padding: 5px 0 50px 0;
 	border-bottom: 1px #ccc solid;
 	background-color: #fff;
 	color: #444;
-	width: 320px;
+	position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 3;
 	box-sizing: border-box;
 }
 
 .shortTopTitle {
+    font-size: 17px;
 	margin-top: 12px;
   	position: absolute;
   	width: 320px;
@@ -306,7 +317,18 @@ a {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    background: url('FridaKahlo.jpg') no-repeat;
+    background-image: url('FridaKahlo.jpg');
+    background-size: cover;
+}
+
+#leadingImage:before {
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
 }
 
 #firstHeading:before {
@@ -326,7 +348,7 @@ a {
 .firstHeading {
 	font-family: Georgia;
 	font-weight: lighter;
-	padding: 10px;
+	padding: 15px 20px;
 	position: absolute;
     bottom: 0;
     color: #fff;
@@ -353,6 +375,7 @@ a {
 
 .subTitle {
 	line-height: 1.4;
+    opacity: 0.7;
 }
 
 .leadText {
@@ -432,11 +455,14 @@ a {
 }
 
 .card {
-	width: 93%;
-	border: 1px solid #ccc;
+	
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
 	min-height: 120px;
 	background-color: #fff;
-	margin: .55em .55em 1em;
+	margin: 2em 0.8em 2em 0.8em;
+    border-radius: 2px;
+    overflow: hidden;
+    
 }
 
 .cardPhoto {
@@ -498,7 +524,8 @@ a {
 
 .cardText p {
 	color: rgba(0,0,0,0.7);
-	font-weight: lighter;
+	line-height: 20px;
+    font-size: 13px;
 }
 
 .cardTextSmaller {
@@ -518,6 +545,8 @@ a {
 	border: none;
 	background-color: #f5f5f5;
 	min-height: 100px;
+    box-shadow: none;
+    padding: 0px 1em;
 }
 
 .article-subtitle {
@@ -530,7 +559,7 @@ a {
 	color: rgba(0,0,0,0.6);
 	display: inline-block;
 	font-family: Helvetica;
-	width:320px;
+	
 }
 
 .feedTitle h4 {
