@@ -2,6 +2,36 @@
 	{{> shortTopBar title="Explore"}}
 	<div class="container feeds">
 
+		<!--Featured-->
+
+		<div class="feedTitle">
+			<h4>Featured from Wikipedia</h4>
+		</div>
+
+		<div class="featuredArticle card">
+			<div id="leadingImage" style="background:url('/FaunaOfScotland.jpg')">
+				<div class="gradientBox">
+					<div id="firstHeading" class="firstHeading">
+		        		<div class="mainTitle"><a href="/wikiPage/FaunaOfScotland">Fauna of Scotland</a></div>
+		        	</div>
+		        </div>
+			</div>
+			<div class="cardText">
+				<h4>Today's featured article</h4>
+				<p>The Fauna of Scotland is generally typical of the northwest European part of the Palearctic ecozone, although several of the country's larger mammals were hunted to extinction in historic times and human activity has also led to various species of wildlife being introduced. </p>
+			</div>
+		</div>
+
+		<div class="featuredPhoto card">
+			<div class="fullCardPhoto"><img src="HeathFritillary.jpg"></div>
+			<div class="cardText">
+				<h4><strong>Heath Fritillary</strong></h4>
+				<h4 style="font-weight:lighter">Today's featured photo</h4>
+			</div>
+		</div>
+
+		<!--end Featured-->
+
 		<!--Recent-->
 
 		<div class="becauseYou card">
@@ -57,35 +87,41 @@
 
 		<!--end Recent-->
 
-		<!--Featured-->
+		<!--Nearby-->
 
-		<div class="feedTitle">
-			<h4>Featured from Wikipedia</h4>
-		</div>
-
-		<div class="featuredArticle card">
-			<div id="leadingImage" style="background:url('/FaunaOfScotland.jpg')">
-				<div class="gradientBox">
-					<div id="firstHeading" class="firstHeading">
-		        		<div class="mainTitle"><a href="/wikiPage/FaunaOfScotland">Fauna of Scotland</a></div>
-		        	</div>
-		        </div>
-			</div>
-			<div class="cardText">
-				<h4>Today's featured article</h4>
-				<p>The Fauna of Scotland is generally typical of the northwest European part of the Palearctic ecozone, although several of the country's larger mammals were hunted to extinction in historic times and human activity has also led to various species of wildlife being introduced. </p>
+		<div class="nearby card">
+			<div class="pull-left cardPhoto"><img src="nearby1.jpg"></div>
+			<div class="cardTextSmaller">
+				<h2><a href="/wikiPage/CasaDeLosAzulejos">Casa de los Azulejos</a></h2>
+				<h5>1 mile away</h5>
 			</div>
 		</div>
 
-		<div class="featuredPhoto card">
-			<div class="fullCardPhoto"><img src="HeathFritillary.jpg"></div>
-			<div class="cardText">
-				<h4><strong>Heath Fritillary</strong></h4>
-				<h4 style="font-weight:lighter">Today's featured photo</h4>
+		<div class="nearby card">
+			<div class="pull-left cardPhoto"><img src="nearby2.jpg"></div>
+			<div class="cardTextSmaller">
+				<h2><a href="/wikiPage/PalacioDeBellasArtes">Palacio de Bellas Artes</a></h2>
+				<h5>1.2 miles away</h5>
 			</div>
 		</div>
 
-		<!--end Featured-->
+		<div class="nearby card">
+			<div class="pull-left cardPhoto"><img src="nearby3.jpg"></div>
+			<div class="cardTextSmaller">
+				<h2><a href="/wikiPage/PalacioDeMineria">Palacio de Minería</a></h2>
+				<h5>1.3 miles away</h5>
+			</div>
+		</div>
+
+		<div class="nearby card">
+			<div class="pull-left cardPhoto"><img src="nearby4.jpg"></div>
+			<div class="cardTextSmaller">
+				<h2><a href="/wikiPage/MetroAllende">Metro Allende</a></h2>
+				<h5>1.3 miles away</h5>
+			</div>
+		</div>
+
+		<!--end Nearby-->
 
 		<!--Saved-->
 
@@ -142,40 +178,5 @@
 
 		<!--end Saved-->
 
-		<!--Nearby-->
-
-		<div class="nearby card">
-			<div class="pull-left cardPhoto"><img src="nearby1.jpg"></div>
-			<div class="cardTextSmaller">
-				<h2><a href="/wikiPage/CasaDeLosAzulejos">Casa de los Azulejos</a></h2>
-				<h5>1 mile away</h5>
-			</div>
-		</div>
-
-		<div class="nearby card">
-			<div class="pull-left cardPhoto"><img src="nearby2.jpg"></div>
-			<div class="cardTextSmaller">
-				<h2><a href="/wikiPage/PalacioDeBellasArtes">Palacio de Bellas Artes</a></h2>
-				<h5>1.2 miles away</h5>
-			</div>
-		</div>
-
-		<div class="nearby card">
-			<div class="pull-left cardPhoto"><img src="nearby3.jpg"></div>
-			<div class="cardTextSmaller">
-				<h2><a href="/wikiPage/PalacioDeMineria">Palacio de Minería</a></h2>
-				<h5>1.3 miles away</h5>
-			</div>
-		</div>
-
-		<div class="nearby card">
-			<div class="pull-left cardPhoto"><img src="nearby4.jpg"></div>
-			<div class="cardTextSmaller">
-				<h2><a href="/wikiPage/MetroAllende">Metro Allende</a></h2>
-				<h5>1.3 miles away</h5>
-			</div>
-		</div>
-
-		<!--end Nearby-->
 	</div>
 </template>
