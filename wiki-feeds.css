@@ -317,7 +317,6 @@ a {
     z-index: -1;
     top: 0;
     left: 0;
-	background: linear-gradient(0deg, #474747 60%, #fafafa);
 }
 
 .mediawiki {
@@ -349,6 +348,7 @@ a {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
+	/*background: linear-gradient(0deg, #474747 60%, #fafafa);*/
 }
 
 .subTitle {
@@ -469,6 +469,10 @@ a {
 
 #featuredArticle h4 {
 	color: rgba(0,0,0,0.4);
+}
+
+.card h2 a {
+	color: rgba(0,0,0,0.6);
 }
 
 .nearby {
