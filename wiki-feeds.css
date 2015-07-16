@@ -338,6 +338,19 @@ a {
 	font-size: 200%;
 }
 
+.mainTitle a {
+	color: #fff;
+}
+
+.gradientBox {
+	display: inline-block;
+	overflow: hidden;
+	height: 100px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
 .subTitle {
 	line-height: 1.4;
 }
@@ -421,13 +434,14 @@ a {
 .card {
 	width: 93%;
 	border: 1px solid #ccc;
-	min-height: 133px;
+	min-height: 120px;
 	background-color: #fff;
 	margin: .55em .55em 1em;
 }
 
 .cardPhoto {
 	display: inline-block;
+	padding: 7px 15px 7px 0;
 }
 
 .fullCardPhoto img {
@@ -444,18 +458,38 @@ a {
 }
 
 .card h4, .card h5 {
-	color: rgba(0,0,0,0.4);
+	color: rgba(0,0,0,0.6);
 }
 
 .card h2, #featuredArticle h2 {
+	font-family: Helvetica;
+	font-weight: 400;
+	color: rgba(0,0,0,0.6);
+}
+
+#featuredArticle h4 {
+	color: rgba(0,0,0,0.4);
+}
+
+.nearby {
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.nearby img {
+	margin-top: -5px;
+}
+
+.nearby h2 {
+	line-height: 130%;
+	margin-top:12px;
 	font-family: Georgia;
-	font-weight: lighter;
-	margin-bottom: 5px;
 }
 
 .cardText {
-	padding: 0 10px 10px 10px;
+	padding: 12px;
 	display: inline-block;
+	box-sizing: border-box;
 }
 
 .cardText p {
@@ -464,10 +498,8 @@ a {
 }
 
 .cardTextSmaller {
-	padding: 20px 0 10px 0;
-	display: inline;
-	float: right;
-	width: 155px;
+	line-height: 50%;
+	margin-top: 6px;
 }
 
 #featuredArticle {
@@ -476,4 +508,31 @@ a {
 
 .shareCard {
   -vendor-animation-duration: .5s;
+}
+
+.becauseYou {
+	border: none;
+	background-color: #f5f5f5;
+	min-height: 100px;
+}
+
+.article-subtitle {
+	font-size: 14px;
+	color: rgba(0,0,0,0.5);
+}
+
+.feedTitle {
+	padding: 0 10px 10px 10px;
+	color: rgba(0,0,0,0.6);
+	display: inline-block;
+	font-family: Helvetica;
+	width:320px;
+}
+
+.feedTitle h4 {
+	display: inline-block;
+}
+
+.arrow {
+	margin-right: -20px;
 }

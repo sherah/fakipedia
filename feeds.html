@@ -1,63 +1,161 @@
 <template name="feeds">
 	{{> shortTopBar title="Explore"}}
 	<div class="container feeds">
-		<div class="nowReading card">
-			<div class="pull-left cardPhoto"><img src="FridaThumb.jpg"></div>
+		<div class="becauseYou card">
+			<h4>Because you read</h4>
+			<div class="pull-left cardPhoto"><img src="FridaThumb.jpg" height="60px"></div>
 			<div class="cardTextSmaller">
-				<h4>Now reading</h4>
 				<h2><a href="/wikiPage/FridaKahlo">Frida Kahlo</a></h2>
+				<p class="article-subtitle">Mexican painter</p>
 			</div>
 		</div>
 
 		<div class="similarArticle card">
-			<div class="fullCardPhoto"><img src="EmiliaOrtizCard.jpg"></div>
+			<div id="leadingImage" style="background:url('/EmiliaOrtiz.jpg')">
+				<div class="gradientBox">
+					<div id="firstHeading" class="firstHeading">
+		        		<div class="mainTitle"><a href="/wikiPage/EmiliaOrtiz">Emilia Ortiz</a></div>
+		        		<div class="subTitle">Mexican cartoonist</div>
+		        	</div>
+		        </div>
+			</div>
 			<div class="cardText">
-				<h4>Similar to Frida Kahlo</h4>
-				<h2><a href="/wikiPage/EmiliaOrtiz">Emilia Ortiz</a></h2>
+				<p>Diego Rivera was a prominent Mexican painter and the husband of Frida Kahlo. His large wall works in fresco helped establish the Mexican Mural Movement in Mexican art. </p>
+			</div>
+		</div>
+
+		<div class="similarArticle card">
+			<div id="leadingImage" style="background:url('/DiegoRivera.jpg')">
+				<div class="gradientBox">
+					<div id="firstHeading" class="firstHeading">
+		        		<div class="mainTitle"><a href="/wikiPage/DiegoRivera">Diego Rivera</a></div>
+		        		<div class="subTitle">Mexican painter, muralist, Communist</div>
+		        	</div>
+		        </div>
+			</div>
+			<div class="cardText">
 				<p>Emilia Ortiz Pérez (Tepic, 1917 - Tepic, November 24, 2012) was a Mexican painter, cartoonist, caricaturist, and poet, best known for her watercolors.</p>
 			</div>
 		</div>
 
 		<div class="similarArticle card">
-			<div class="fullCardPhoto"><img src="HannahHochCard.jpg"></div>
+			<div id="leadingImage" style="background:url('/HannahHoch.jpg')">
+				<div class="gradientBox">
+					<div id="firstHeading" class="firstHeading">
+		        		<div class="mainTitle"><a href="/wikiPage/HannahHoch">Hannah Hoch</a></div>
+		        		<div class="subTitle">German artist</div>
+		        	</div>
+		        </div>
+			</div>
 			<div class="cardText">
-				<h4>Similar to Frida Kahlo</h4>
-				<h2><a href="/wikiPage/HannahHoch">Hannah Hoch</a></h2>
 				<p>Hannah Höch (German: [hœç]; November 1, 1889 – May 31, 1978) was a German Dada artist. She is best known for her work of the Weimar period, when she was one of the originators of photomontage.</p>
 			</div>
 		</div>
 
-		<div class="trending card">
-			<div class="fullCardPhoto"><img src="SleaterKinneyCard.jpg"></div>
+		<div class="becauseYou card">
+			<h4>Because you saved</h4>
+			<div class="pull-left cardPhoto"><img src="SubPopLogo.jpg"></div>
+			<div class="cardTextSmaller">
+				<h2><a href="/wikiPage/SubPop">Sub Pop</a></h2>
+				<p class="article-subtitle">American record label</p>
+			</div>
+		</div>
+
+		<div class="similarArticle card">
+			<div id="leadingImage" style="background:url('/SleaterKinneyCard.jpg')">
+				<div class="gradientBox">
+					<div id="firstHeading" class="firstHeading">
+		        		<div class="mainTitle"><a href="/wikiPage/SleaterKinneyCard">Sleater-Kinney</a></div>
+		        		<div class="subTitle">American rock band</div>
+		        	</div>
+		        </div>
+			</div>
 			<div class="cardText">
-				<h4>Trending near you</h4>
-				<h2><a href="/wikiPage/SleaterKinney">Sleater-Kinney</a></h2>
+				<p>Sleater-Kinney (/ˌsleɪtərˈkɪniː/ slay-tər-kin-ee[1]) is an American rock band that formed in Olympia, Washington, in 1994. The band's lineup features Corin Tucker (vocals and guitar), Carrie Brownstein (guitar and vocals), and Janet Weiss (drums).</p>
+			</div>
+		</div>
+
+		<div class="similarArticle card">
+			<div id="leadingImage" style="background:url('/Grunge.jpg')">
+				<div class="gradientBox">
+					<div id="firstHeading" class="firstHeading">
+		        		<div class="mainTitle"><a href="/wikiPage/Grunge">Grunge</a></div>
+		        		<div class="subTitle">Subgenre of alternative rock</div>
+		        	</div>
+		        </div>
+			</div>
+			<div class="cardText">
+				<p>Grunge (sometimes referred to as the Seattle sound) is a subgenre of alternative rock that emerged during the mid-1980s in the American state of Washington, particularly in Seattle.</p>
+			</div>
+		</div>
+
+		<div class="similarArticle card">
+			<div id="leadingImage" style="background:url('/Nevermind.jpg')">
+				<div class="gradientBox">
+					<div id="firstHeading" class="firstHeading">
+		        		<div class="mainTitle"><a href="/wikiPage/Nevermind">Nevermind</a></div>
+		        		<div class="subTitle">Album by Nirvana</div>
+		        	</div>
+		        </div>
+			</div>
+			<div class="cardText">
+				<p>Nevermind is the second studio album by the American rock band Nirvana, released on September 24, 1991. Produced by Butch Vig, Nevermind was the group's first release on DGC Records.</p>
+			</div>
+		</div>
+
+		<!-- <div class="trending card">
+			<div id="leadingImage" style="background:url('/SleaterKinneyCard.jpg')">
+				<div class="gradientBox">
+					<div id="firstHeading" class="firstHeading">
+		        		<div class="mainTitle"><a href="/wikiPage/SleaterKinneyCard">Sleater-Kinney</a></div>
+		        		<div class="subTitle">American rock band</div>
+		        	</div>
+		        </div>
+			</div>
+			<div class="cardText">
 				<p>Sleater-Kinney (/ˌsleɪtərˈkɪniː/ slay-tər-kin-ee[1]) is an American rock band that formed in Olympia, Washington, in 1994. The band's lineup features Corin Tucker (vocals and guitar), Carrie Brownstein (guitar and vocals), and Janet Weiss (drums).</p>
 			</div>
 		</div>
 
 		<div class="trending card">
 			<div class="fullCardPhoto"><img src="CableCar.jpg"></div>
+			<div id="leadingImage" style="background:url('/SleaterKinneyCard.jpg')">
+				<div class="gradientBox">
+					<div id="firstHeading" class="firstHeading">
+		        		<div class="mainTitle"><a href="/wikiPage/SleaterKinneyCard">Sleater-Kinney</a></div>
+		        		<div class="subTitle">American rock band</div>
+		        	</div>
+		        </div>
+			</div>
 			<div class="cardText">
-				<h4>Trending near you</h4>
 				<h2 style="line-height:1.2"><a href="/wikiPage/SanFranciscoCableCarSystem">San Francisco<br> cable car system</a></h2>
 				<p>The San Francisco cable car system is the world's last manually operated cable car system. </p>
 			</div>
+		</div> -->
+
+		<div class="feedTitle">
+			<h4>Featured from Wikipedia</h4>
+			<span class="pull-right arrow"><i class="fa fa-angle-right"></i></span>
 		</div>
 
-		<div class="similarArticleGallery card">
+		<!-- <div class="similarArticleGallery card">
 			<div class="fullCardPhoto"><img src="Hummingbird.jpg"></div>
 			<div class="cardText">
 				<h4>Gallery</h4>
 				<h2>Hummingbird</h2>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="featuredArticle card">
-			<div class="fullCardPhoto"><img src="FaunaOfScotland.jpg"></div>
+			<div id="leadingImage" style="background:url('/FaunaOfScotland.jpg')">
+				<div class="gradientBox">
+					<div id="firstHeading" class="firstHeading">
+		        		<div class="mainTitle"><a href="/wikiPage/FaunaOfScotland">Fauna of Scotland</a></div>
+		        	</div>
+		        </div>
+			</div>
 			<div class="cardText">
-				<h4>Featured Article</h4>
-				<h2><a href="/wikiPage/FaunaOfScotland">Fauna of Scotland</a></h2>
+				<h4>Today's featured article</h4>
 				<p>The Fauna of Scotland is generally typical of the northwest European part of the Palearctic ecozone, although several of the country's larger mammals were hunted to extinction in historic times and human activity has also led to various species of wildlife being introduced. </p>
 			</div>
 		</div>
@@ -65,24 +163,40 @@
 		<div class="featuredPhoto card">
 			<div class="fullCardPhoto"><img src="HeathFritillary.jpg"></div>
 			<div class="cardText">
-				<h4>Featured Photo</h4>
-				<h2>Heath Fritillary</h2>
+				<h4><strong>Heath Fritillary</strong></h4>
+				<h4 style="font-weight:lighter">Today's featured photo</h4>
 			</div>
 		</div>
 
 		<div class="nearby card">
-			<div class="pull-left cardPhoto"><img src="MissionBaySanDiego.jpg"></div>
+			<div class="pull-left cardPhoto"><img src="nearby1.jpg"></div>
 			<div class="cardTextSmaller">
-				<h5>Nearby: 1 mile away</h5>
-				<h2>Mission Bay</h2>
+				<h2>Casa de los Azulejos</h2>
+				<h5>1 mile away</h5>
 			</div>
 		</div>
 
 		<div class="nearby card">
-			<div class="pull-left cardPhoto"><img src="SanDiegoMesaCollege.jpg"></div>
+			<div class="pull-left cardPhoto"><img src="nearby2.jpg"></div>
 			<div class="cardTextSmaller">
-				<h5>Nearby: 1.2 miles away</h5>
-				<h2>Mesa College</h2>
+				<h2>Palacio de Bellas Artes</h2>
+				<h5>1.2 miles away</h5>
+			</div>
+		</div>
+
+		<div class="nearby card">
+			<div class="pull-left cardPhoto"><img src="nearby3.jpg"></div>
+			<div class="cardTextSmaller">
+				<h2>Palacio de Minería</h2>
+				<h5>1.3 miles away</h5>
+			</div>
+		</div>
+
+		<div class="nearby card">
+			<div class="pull-left cardPhoto"><img src="nearby4.jpg"></div>
+			<div class="cardTextSmaller">
+				<h2>Metro Allende</h2>
+				<h5>1.3 miles away</h5>
 			</div>
 		</div>
 	</div>
