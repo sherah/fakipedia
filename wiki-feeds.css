@@ -42,7 +42,7 @@ a {
 .shortTopTitle {
 	margin-top: 12px;
   	position: absolute;
-  	width: 100%;
+  	width: 320px;
   	pointer-events: none;
 }
 
