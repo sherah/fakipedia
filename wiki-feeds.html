@@ -3,9 +3,7 @@
 </head>
 
 <template name="mainPage">
-	{{> topBar}}
-	{{> featuredArticle}}
-	{{> bottomBar}}
+	{{> feeds}}
 </template>
 
 <template name="topBar">
@@ -24,7 +22,7 @@
 <template name="shortTopBar">
 	<div id="shortTopBar">
 		{{# if title}}<h2 class="text-center shortTopTitle">{{title}}</h2>{{/if}}
-		<img src="/close.svg" class="goBack" width="44px" style="margin-top:-7px">
+		<img src="/close.svg" class="goBack" width="34px" style="margin-left:7px">
 	</div>
 </template>
 
