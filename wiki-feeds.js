@@ -38,30 +38,34 @@ if (Meteor.isClient) {
   });
 
   Template.wikiPage.events({
-    'touchstart .page-cover': function(event, data){
+    'touchstart .page-cover, click .page-cover': function(event, data){
       toggleModal('#tweetAFact');
     }
   });
 
+  Template.wikiPage.onRendered(function(){
+    window.scroll(0,0);
+  });
+
   Template.search.events({
-    'touchstart .goBack': function(event){
+    'touchstart .goBack, click .goBack': function(event){
       window.history.back();
     }
   });
 
   Template.shortTopBar.events({
-    'touchstart .goBack': function(event){
+    'touchstart .goBack, click .goBack': function(event){
       console.log('it works');
       window.history.back();
     }
   });
 
   Template.sideNav.events({
-    'touchstart .goBack': function(event){
+    'touchstart .goBack, click .goBack': function(event){
       event.preventDefault();
       window.history.back();
     },
-    'touchstart .contributeBtn': function(event){
+    'touchstart .contributeBtn, click .contributeBtn': function(event){
       event.preventDefault();
       $('.ThankYou').css({'display':'block','z-index': '9999'});
     }
@@ -82,19 +86,19 @@ if (Meteor.isClient) {
   });
 
   Template.shortTopBar.events({
-    'touchstart .xOut': function(event){
+    'touchstart .xOut, click .xOut': function(event){
       window.history.back();
     },
   });
 
   Template.bottomBar.events({
-    'touchstart .goBack': function(){
+    'touchstart .goback, click .goBack': function(){
       window.history.back();
     },
-    'touchstart .goForward': function(){
+    'touchstart .goForward, click .goForward': function(){
       window.history.forward();
     },
-    'touchstart .favoriteIt': function (event, template) {
+    'touchstart .favoriteIt, click .favoriteIt': function (event, template) {
       $(event.target).removeClass('fa-heart-o favoriteIt')
         .addClass('fa-heart red unfavoriteIt pulse');
 
@@ -103,14 +107,14 @@ if (Meteor.isClient) {
           $('#savedFavorite').addClass('hide');
       }, 2000);
     },
-    'touchstart .unfavoriteIt': function (event, template) {
+    'touchstart .unfavoriteIt, click .unfavoriteIt': function (event, template) {
       $(event.target).removeClass('fa-heart red unfavoriteIt')
         .addClass('fa-heart-o favoriteIt pulse');
     },
-    'touchstart .shareIt': function (event, template) {
+    'touchstart .shareIt, click .shareIt': function (event, template) {
       toggleModal('#tweetAFact');
     },
-    'touchstart .page-cover': function(event, data){
+    'touchstart .page-cover, click .page-cover': function(event, data){
       toggleModal('#tweetAFact');
     }
   });
