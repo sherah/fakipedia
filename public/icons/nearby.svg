@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>nearby</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="primary-icons" sketch:type="MSArtboardGroup" transform="translate(-388.000000, -188.000000)" fill="#000000" opacity="0.8">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(112.000000, 183.000000)">
+                <path d="M296.294125,10.3336479 L296.844635,9.9725319 L296.869458,9.99820166 L296.927379,9.91825458 L296.294125,10.3336479 Z M296.068755,11.1033766 L296.111575,11.0752881 L296.870355,9.9991302 L296.869458,9.99820166 Z M288.014911,16.3864266 L287.910626,16.4548344 L287.998115,16.370627 L288.007702,16.379645 L282.260023,24.4513459 L281.138634,25.190165 L281.113857,25.1644737 L281.892798,24.0705743 L290.229101,18.5782588 L290.090206,18.7128379 L290.24885,18.4878378 L288.014911,16.3864266 Z M289,31 C281.820298,31 276,25.1797017 276,18 C276,10.8202983 281.820298,5 289,5 C296.179702,5 302,10.8202983 302,18 C302,25.1797017 296.179702,31 289,31 Z M289,29.96 C295.605326,29.96 300.96,24.6053256 300.96,18 C300.96,11.3946744 295.605326,6.04 289,6.04 C282.394674,6.04 277.04,11.3946744 277.04,18 C277.04,24.6053256 282.394674,29.96 289,29.96 Z M296.927379,9.91825458 L290.515189,19.0124865 L281.057498,25.2436211 L287.62541,16.0200329 L296.927379,9.91825458 Z" id="nearby" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="27px" viewBox="0 0 19 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>Share</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="primary-icons" sketch:type="MSArtboardGroup" transform="translate(-226.000000, -187.000000)">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(112.000000, 183.000000)">
+                <g id="Share" transform="translate(114.000000, 4.000000)" sketch:type="MSShapeGroup">
+                    <path d="M8.95025253,1.99949494 L5.25,5.69974747 L4.5,4.94974747 L9.44974747,-3.64153152e-14 L14.3994949,4.94974747 L13.6494949,5.69974747 L13.6494949,5.69974747 L9.95025253,2.00050506 L9.95025253,16.4502525 L8.95025253,16.4502525 L8.95025253,1.99949494 Z" id="Shape" fill="#000000"></path>
+                    <path d="M12.9998779,8 L19,8 L19,27 L0,27 L0,8 L6.06237793,8" id="Rectangle-184" stroke="#000000"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

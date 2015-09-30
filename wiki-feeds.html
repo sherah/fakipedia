@@ -21,8 +21,18 @@
 
 <template name="shortTopBar">
 	<div id="shortTopBar">
-		<img src="/close.svg" class="goBack" width="34px" style="margin-left:7px">
-		{{# if title}}<h2 class="text-center shortTopTitle">{{title}}</h2>{{/if}}
+		<ul id="shortTopBarNav">
+			<!-- {{#if the page is feeds}} -->
+			<li>
+				<div class="upperMenu pull-left">
+					<img src="/icons/back.svg">
+				</div>
+			</li>
+			<li><h2 class="text-center shortTopTitle"><img src="/icons/W.svg"></h2></li>
+			<li><a href="/search"><img src="/icons/search.svg" class="pull-right" width="34px" id="searchIcon"></a></li>
+			<!-- {{/if}} -->
+			<!-- <img src="/close.svg" class="goBack" width="34px" style="margin-left:7px"> -->
+		</ul>
 	</div>
 </template>
 
@@ -32,12 +42,12 @@
 	</div>
 	<div id="bottomBar" class="nav">
 		<div class="browseArrows pull-left">
-			<i class="fa fa-chevron-left goBack"></i>
-			<i class="fa fa-chevron-right goForward"></i>
+			<i class="fa fa-chevron-down"></i>
 		</div>
 		<div class="engageIcons pull-right">
-			<i class="fa fa-heart-o animated pulse favoriteIt"></i>
+			<i class="fa fa-bookmark-o animated pulse"></i>
 			<i class="fa fa-share-square-o animated pulse shareIt"></i>
+			<i class="fa fa-navicon animated pulse shareIt"></i>
 		</div>
 	</div>
 	<div id="tweetAFact" class="modal hide">

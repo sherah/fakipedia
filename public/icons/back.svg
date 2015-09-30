@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="24px" viewBox="0 0 14 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>back</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="primary-icons" sketch:type="MSArtboardGroup" transform="translate(-895.000000, -188.000000)" fill="#000000">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(112.000000, 183.000000)">
+                <path d="M783,17.1935815 L795.03776,5.15614151 C795.03776,5.15614151 795.68256,4.70750151 796.30624,5.33118151 C796.93152,5.95486151 796.30624,6.50110151 796.30624,6.50110151 L785.5952,17.2124615 L795.79904,27.4163015 C795.79904,27.4163015 796.33024,28.0563015 795.76,28.6249415 C795.19008,29.1948615 794.3952,28.6249415 794.3952,28.6249415 L783,17.1935815 Z" id="back" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

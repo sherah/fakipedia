@@ -47,6 +47,10 @@ if (Meteor.isClient) {
     window.scroll(0,0);
   });
 
+  Template.search.onRendered(function(){
+    window.scroll(0,0);
+  });
+
   Template.search.events({
     'touchstart .goBack, click .goBack': function(event){
       window.history.back();
