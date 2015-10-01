@@ -53,6 +53,7 @@ if (Meteor.isClient) {
 
   Template.search.events({
     'touchstart .goBack, click .goBack': function(event){
+      event.preventDefault();
       window.history.back();
     }
   });

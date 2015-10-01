@@ -22,48 +22,30 @@
 <template name="shortTopBar">
 	<div id="shortTopBar">
 		<ul id="shortTopBarNav">
-			<!-- {{#if the page is feeds}} -->
+
 			<li>
 				<div class="upperMenu pull-left">
-					<img src="/icons/back.svg">
+					{{#if back}}<img src="/icons/back.svg" class="goBack">{{/if}}
 				</div>
 			</li>
+
 			<li><h2 class="text-center shortTopTitle"><img src="/icons/W.svg"></h2></li>
 			<li><a href="/search"><img src="/icons/search.svg" class="pull-right" width="34px" id="searchIcon"></a></li>
-			<!-- {{/if}} -->
-			<!-- <img src="/close.svg" class="goBack" width="34px" style="margin-left:7px"> -->
 		</ul>
 	</div>
 </template>
 
 <template name="bottomBar">
-	<div id="savedFavorite" class="hide">
-		<p>Saved for offline reading.</p>
-	</div>
-	<div id="bottomBar" class="nav">
-		<div class="browseArrows pull-left">
-			<i class="fa fa-chevron-down"></i>
-		</div>
-		<div class="engageIcons pull-right">
-			<i class="fa fa-bookmark-o animated pulse"></i>
-			<i class="fa fa-share-square-o animated pulse shareIt"></i>
-			<i class="fa fa-navicon animated pulse shareIt"></i>
-		</div>
-	</div>
-	<div id="tweetAFact" class="modal hide">
-		<div class="page-cover"></div>
-		<div class="shareCard animated slideInUp">
-			<div id="shareImgContainer" class="shareFact">
-				<div id="shareImg">
-					<img src="/tweetAFact.png">
-				</div>
-				<div id="shareImgBtn">
-					<p>Share as image</p>
-				</div>
-			</div>
-			<div id="shareAsText" class="shareFact">
-				<p>Share as text</p>
-			</div>
-		</div>
+	<div id="bottomBar">
+		<ul id="bottomBarNav">
+			<li><img src="/icons/down.svg"></li>
+			<li>
+				<ul id="articleActionNav" class="pull-right">
+					<li><img src="/icons/bookmark.svg" class="pull-right"></li>
+					<li><img src="/icons/share.svg" class="pull-right"></li>
+					<li><img src="/icons/toc.svg" class="pull-right"></li>
+				</ul>
+			</li>
+		</ul>
 	</div>
 </template>

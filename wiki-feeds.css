@@ -83,6 +83,10 @@ a {
     font-size: 70%;
 }
 
+#searchIcon {
+	margin: 2px 15px 0 0;
+}
+
 #searchBar {
 	padding: 7px;
 	background-color: #e4e4e4;
@@ -111,9 +115,11 @@ a {
 	height: 45px;
 	background-color: #e4e4e4;
 	position: fixed;
-	width: 320px;
+	width: 100%;
 	bottom: 0;
 	border-top: 1px #ccc solid;
+	padding:7px;
+	box-sizing: border-box;
 }
 
 .fa-search {
@@ -167,10 +173,10 @@ a {
 	color: red;
 }
 
-#shortTopBarNav {
+#shortTopBarNav, #bottomBarNav, #articleActionNav {
 	list-style-type: none;
 	width:100%;
-	margin:0 auto;
+	margin:0;
 	padding:0;
 }
 
@@ -180,9 +186,24 @@ a {
 	display: inline-block;
 }
 
+#bottomBarNav li {
+	width: 49%;
+	height: 100%;
+	display: inline-block;
+}
+
 #shortTopBarNav li:last-child {
 	float: right;
 	margin-top: 7px;
+}
+
+#articleActionNav li {
+	padding:0;
+	margin:0;
+	width:30%;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .hide {
