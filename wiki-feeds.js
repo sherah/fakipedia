@@ -98,6 +98,10 @@ if (Meteor.isClient) {
 
   Template.bottomBar.events({
     'touchstart .goback, click .goBack': function(){
+      $('#mainWikiPage').addClass('bounceOutDown');
+      window.history.back();
+    },
+    'touchstart .slideDown, click .slideDown': function(){
       window.history.back();
     },
     'touchstart .goForward, click .goForward': function(){
