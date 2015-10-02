@@ -29,7 +29,12 @@
 				</div>
 			</li>
 
+			{{#if back}}
+			<li><h2 class="text-center shortTopTitle"><img src="/icons/W.svg" style="opacity:0.5"></h2></li>
+			{{else}}
 			<li><h2 class="text-center shortTopTitle"><img src="/icons/W.svg"></h2></li>
+			{{/if}}
+
 			<li><a href="/search"><img src="/icons/search.svg" class="pull-right" width="34px" id="searchIcon"></a></li>
 		</ul>
 	</div>
@@ -38,7 +43,7 @@
 <template name="bottomBar">
 	<div id="bottomBar">
 		<ul id="bottomBarNav">
-			<li><img src="/icons/down.svg"></li>
+			<li></li>
 			<li>
 				<ul id="articleActionNav" class="pull-right">
 					<li><img src="/icons/bookmark.svg" class="pull-right"></li>
